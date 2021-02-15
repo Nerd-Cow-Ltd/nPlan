@@ -1,8 +1,0 @@
-package.json
-package-lock.json
-gulpfile.js
-
-node_modules/
-.vscode/
-src/
-.gitignore
