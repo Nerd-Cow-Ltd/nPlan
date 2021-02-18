@@ -1,1 +1,1 @@
-"use strict";!function(n){n(document).ready(function(){}),n(window).on("load",function(){})}(jQuery);
+"use strict";!function(i){i(document).ready(function(){i(".desktop-navigation .collection-item").each(function(){var n,e=i(this).children("a");"#"==e.attr("href")&&(n=i(this).children(".submenu"),e.on("mouseenter",function(){n.addClass("visible")}),n.on("mouseleave",function(){i(this).removeClass("visible")}))})}),i(window).on("load",function(){})}(jQuery);
