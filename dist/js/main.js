@@ -1,1 +1,1 @@
-"use strict";!function(n){n(document).on("ready",function(){n(".desktop-navigation .collection-item > a").on("mouseenter",function(){"#"==n(this).attr("href")&&n(this).parent().children(".submenu").addClass("visible")})})}(jQuery);
+"use strict";!function(o){o(document).on("ready",function(){console.log("1"),o(".desktop-navigation .collection-item > a").on("mouseenter",function(){console.log("2"),"#"==o(this).attr("href")&&(console.log("3"),o(this).parent().children(".submenu").addClass("visible"))})}),o(window).on("load",function(){console.log("load")})}(jQuery);
