@@ -1,1 +1,1 @@
-"use strict";!function(o){o(document).ready(function(){console.log("1"),o(".desktop-navigation .collection-item > a").on("mouseenter",function(){console.log("2"),"#"==o(this).attr("href")&&(console.log("3"),o(this).parent().children(".submenu").addClass("visible"))})}),o(window).on("load",function(){console.log("load")})}(jQuery);
+"use strict";!function(n){n(document).ready(function(){}),n(window).on("load",function(){})}(jQuery);
