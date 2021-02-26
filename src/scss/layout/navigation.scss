@@ -387,6 +387,9 @@
             background-color: $additional01;
         }
     }
+    &::after {
+        background-color: $additional01;
+    }
 }
 
 .desktop-navigation {

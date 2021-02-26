@@ -1488,6 +1488,10 @@ body .pagination .next:hover > div {
   background-color: #3686B4;
 }
 
+.current-active::after {
+  background-color: #3686B4;
+}
+
 .desktop-navigation .collection-item:last-child .current-active p {
   color: #172B38;
 }
