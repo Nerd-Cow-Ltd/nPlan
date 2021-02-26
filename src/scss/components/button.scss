@@ -22,6 +22,13 @@
             color: $secondary03;
             pointer-events: none;
         }
+        &.primary--dark-bg {
+            &:hover {
+                color: $secondary03 !important;
+                background-color: $additional01 !important;
+                border: 1px solid $additional01 !important;
+            }
+        }
     }
     &.icon {
         background-color: transparent;
