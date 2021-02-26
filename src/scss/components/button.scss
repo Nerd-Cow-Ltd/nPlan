@@ -24,9 +24,9 @@
         }
         &.primary--dark-bg {
             &:hover {
-                color: $secondary03 !important;
-                background-color: $additional01 !important;
-                border: 1px solid $additional01 !important;
+                color: $secondary03;
+                background-color: $additional01;
+                border: 1px solid $additional01;
             }
         }
     }

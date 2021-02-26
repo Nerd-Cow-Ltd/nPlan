@@ -316,9 +316,9 @@ body blockquote.green::before {
 }
 
 .w-button.primary.primary--dark-bg:hover {
-  color: #F4F6F7 !important;
-  background-color: #3686B4 !important;
-  border: 1px solid #3686B4 !important;
+  color: #F4F6F7;
+  background-color: #3686B4;
+  border: 1px solid #3686B4;
 }
 
 .w-button.icon {
