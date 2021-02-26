@@ -1,0 +1,82 @@
+.footer.dark {
+    @include max(1024px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    a.primary {
+        &:visited {
+            background-color: $additional03;
+            border: 1px solid $additional03;
+            color: $primary01;
+        }
+        &:hover {
+            background-color: $additional01;
+            border: 1px solid $additional01;
+            color: $secondary03;
+        }
+        @include max(1024px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .separator {
+        margin: 60px 0;
+        background-color: $secondary01;
+    }
+    .footer__first {
+        @include max(1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            & > div:last-child {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+    .footer__second {
+        & > div > a {
+            color: $secondary03 !important;
+            &.current-active {
+                color: $additional01 !important;
+                span, p {
+                    color: $additional01 !important;
+                    &::after {
+                        background-color: $additional01 !important;
+                    }
+                }
+            }
+        }
+        div p a {
+            &:visited {
+                color: $secondary03;
+            }
+        }
+        @include max(1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            & > div {
+                max-width: 100%;
+                margin-left: 0;
+                &:not(:last-child) {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+    .footer__third {
+        @include max(1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            & > p:first-child {
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            margin: 0;
+        }
+        a {
+            color: $secondary03;
+            text-decoration: none;
+        }
+    }
+}

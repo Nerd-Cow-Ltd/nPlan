@@ -1,0 +1,34 @@
+body {
+    .w-container {
+        .w-row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: $shadow;
+}
+
+.mobile-shadow {
+    @include max(479px) {
+        box-shadow: $shadow;
+    }
+}
+
+.no-mobile-shadow {
+    @include max(479px) {
+        box-shadow: none;
+    }
+}
+
+body {
+    .w-container {
+        .margin-removal {
+            h1, h2, h3, h4, p, span, a {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin min($min) {
+    @media screen and (min-width: $min ) {
+        @content
+    }
+};
+
+@mixin max($max) {
+    @media screen and (max-width: $max ) {
+        @content
+    }
+};
+
+@mixin minmax($min,$max) {
+    @media screen and (min-width: $min ) and (max-width: $max ) {
+        @content
+    }
+};
+
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

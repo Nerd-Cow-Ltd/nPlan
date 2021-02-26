@@ -1,0 +1,108 @@
+.slider {
+    padding-bottom: 72px;
+    .slick-track > div:not(:first-child) img {
+        visibility: hidden;
+    }
+    & > button.slick-prev {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        top: calc(100% - 12px);
+        left: 0px;
+        text-indent: -9999px;
+        white-space: nowrap;
+        font-size: 0;
+        background-color: $primary01;
+        mask-image: url('../images/arrow-left.svg');
+        mask-size: 8px 12px;
+        transition: .3s;
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: $additional01;
+            }
+        }
+        @include max(767px) {
+            left: initial;
+            right: 38px;
+        }
+    }
+    & > button.slick-next {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        top: calc(100% - 12px);
+        left: 38px;
+        text-indent: -9999px;
+        white-space: nowrap;
+        font-size: 0;
+        background-color: $primary01;
+        mask-image: url('../images/arrow-right.svg');
+        mask-size: 8px 12px;
+        transition: .3s;
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: $additional01;
+            }
+        }
+        @include max(767px) {
+            left: initial;
+            right: 0px;
+        }
+    }
+    &.slick-initialized .slick-track > div img {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.slider--opinions {
+    @include max(767px) {
+        padding-bottom: 42px;
+    }
+    & > button.slick-prev {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        top: 222px;
+        left: 0px;
+        text-indent: -9999px;
+        white-space: nowrap;
+        font-size: 0;
+        background-color: $primary01;
+        mask-image: url('../images/arrow-left.svg');
+        mask-size: 8px 12px;
+        transition: .3s;
+        z-index: 10;
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: $additional01;
+            }
+        }
+        @include max(767px) {
+            top: calc(100% - 12px);
+        }
+    }
+    & > button.slick-next {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        top: 222px;
+        left: 38px;
+        text-indent: -9999px;
+        white-space: nowrap;
+        font-size: 0;
+        background-color: $primary01;
+        mask-image: url('../images/arrow-right.svg');
+        mask-size: 8px 12px;
+        transition: .3s;
+        z-index: 10;
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: $additional01;
+            }
+        }
+        @include max(767px) {
+            top: calc(100% - 12px);
+        }
+    }
+}

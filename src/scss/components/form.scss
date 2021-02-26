@@ -1,0 +1,148 @@
+body {
+    form {
+        input:placeholder-shown, input:placeholder-shown {
+            border-bottom: 1px solid $secondary01;
+        }
+    }
+    select {
+        -o-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 1;
+    }
+    .select__wrapper {
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url('../images/arrow-down.svg');
+            background-size: 12px 8px;
+            position: absolute;
+            width: 12px;
+            height: 8px;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .w-radio {
+        position: relative;
+        padding-left: 36px;
+        display: inline-block;
+        .w-radio-input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            & + span {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    display: block;
+                    height: 21px;
+                    width: 21px;
+                    border-radius: 100%;
+                    border: 1px solid $secondary01;
+                    background-color: transparent;
+                    transition: .3s;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 3px;
+                    top: 5px;
+                    display: block;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 100%;
+                    background-color: $primary01;
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+            &:checked + span {
+                &::before {
+                    background-color: transparent !important;
+                    border: 1px solid $primary01;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            .w-radio-input {
+                & + span {
+                    &::before {
+                        background-color: rgba(156, 174, 188, 0.25);
+                    }
+                }
+            }
+        }
+    }
+    .w-checkbox {
+        position: relative;
+        padding-left: 36px;
+        display: inline-block;
+        .w-checkbox-input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            & + span {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    display: block;
+                    height: 21px;
+                    width: 21px;
+                    border-radius: 2px;
+                    border: 1px solid $secondary01;
+                    background-color: transparent;
+                    transition: .3s;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    mask-image: url('../images/tick.svg');
+                    mask-size: 17px 17px;
+                    background-color: transparent;
+                    left: 2px;
+                    top: 4px;
+                    display: block;
+                    height: 17px;
+                    width: 17px;
+                    border-radius: 2px;
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+            &:checked + span {
+                &::before {
+                    background-color: $primary01 !important;
+                    border: 1px solid $primary01;
+                }
+                &::after {
+                    background-color: $secondary03;
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            .w-checkbox-input {
+                & + span {
+                    &::before {
+                        background-color: rgba(156, 174, 188, 0.25);
+                    }
+                }
+            }
+        }
+    }
+}

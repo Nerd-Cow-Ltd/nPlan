@@ -1,0 +1,44 @@
+.accordion {
+    p:first-child {
+        position: relative;
+        display: block;
+        transition: .3s;
+        cursor: pointer;
+        &::after {
+            content: "";
+            mask-image: url('../images/accordion.svg');
+            mask-size: 13px 13px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            background-color: $primary01;
+            top: 6px;
+            right: 0;
+            transition: .3s;
+        }
+        &:hover {
+            color: $additional01;
+            &::after {
+                background-color: $additional01;
+            }
+        }
+    }
+    p:last-child {
+        display: none;
+    }
+    &.active {
+        p:first-child {
+            &::after {
+                mask-image: url("../images/accordion-close.svg");
+                mask-size: 13px 1px;
+                width: 13px;
+                height: 1px;
+                background-color: $additional01;
+                top: 12px;
+            }
+        }
+        p:last-child {
+            display: block;
+        }
+    }
+}

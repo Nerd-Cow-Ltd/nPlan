@@ -1,0 +1,36 @@
+body {
+    .pagination {
+        .previous {
+            & > div {
+                mask-image: url('../images/arrow-left.svg');
+                mask-size: 8px 12px;
+                width: 8px;
+                height: 12px;
+                background-color: $primary01;
+                display: inline-block;
+                transition: .3s;
+            }
+            &:hover {
+                & > div {
+                    background-color: $additional01;
+                }
+            }
+        }
+        .next {
+            & > div {
+                mask-image: url('../images/arrow-right.svg');
+                mask-size: 8px 12px;
+                width: 8px;
+                height: 12px;
+                background-color: $primary01;
+                display: inline-block;
+                transition: .3s;
+            }
+            &:hover {
+                & > div {
+                    background-color: $additional01;
+                }
+            }
+        }
+    }
+}
