@@ -1152,7 +1152,7 @@ body .pagination .next:hover > div {
 
 .cc-window .cc-btn {
   background-color: #FFB142 !important;
-  border: #FFB142 !important;
+  border: 1px solid #FFB142 !important;
   padding: 15px 30px !important;
   color: #172B38 !important;
   border-radius: 8px !important;
