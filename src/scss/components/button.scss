@@ -49,6 +49,11 @@
             width: 20px;
             background-color: $primary01;
             transition: .3s;
+            @include max(767px) {
+                left: initial;
+                transform: translate(-50%, -50%);
+                right: calc(50% + 45px);
+            }
         }
         &:visited {
             background-color: transparent;

@@ -347,6 +347,15 @@ body blockquote.green::before {
   transition: .3s;
 }
 
+@media screen and (max-width: 767px) {
+  .w-button.icon::before {
+    left: initial;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    right: calc(50% + 45px);
+  }
+}
+
 .w-button.icon:visited {
   background-color: transparent;
   border: 1px solid #3686B4;
