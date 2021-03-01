@@ -78,16 +78,28 @@
             $(this).css('color', '#172B38');
         });
 
-        let $video = $('.js-video__wrapper');
-
         $('.js-toggle-video').on('click', function(e) {
             e.preventDefault();
+            let $video = $('.js-video__wrapper');
+            let windowWidth = document.body.clientWidth;  
+            if (windowWidth <= 560) {
+                $('body').animate({
+                    'margin-top': $video.innerHeight()
+                }, 500);
+            };
             $video.addClass('visible');
         });
 
         $('.js-close-video').on('click', function(e) {
             e.preventDefault();
+            let $video = $('.js-video__wrapper');
+            let windowWidth = document.body.clientWidth;
             let src = $video.attr("src");
+            if (windowWidth <= 560) {
+                $('body').animate({
+                    'margin-top': 0
+                }, 500);
+            };
             $video.removeClass('visible');
             $video.attr("src", "");
             $video.attr("src", src);

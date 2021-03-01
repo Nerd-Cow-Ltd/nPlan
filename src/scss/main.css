@@ -1065,6 +1065,24 @@ body .pagination .next:hover > div {
   transition: .5s;
 }
 
+@media screen and (max-width: 560px) {
+  .js-video__wrapper {
+    bottom: initial;
+    right: 0;
+    max-width: 560px;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .js-video__wrapper .js-video {
+    max-width: 560px;
+  }
+}
+
 .js-video__wrapper .js-close-video {
   height: 24px;
   width: 24px;
@@ -1092,6 +1110,13 @@ body .pagination .next:hover > div {
 .js-video__wrapper.visible {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media screen and (max-width: 560px) {
+  .js-video__wrapper.visible {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 840px) {
