@@ -209,7 +209,7 @@
             $activitiesError = $form.find('.calculator14');
             $estimate = $form.find('.calculator15');
 
-            $inputs = $('input, select');
+            $inputs = $el.find('input, select');
 
             $next = $form.find('.primary-next');
             $back = $form.find('.back-button');
