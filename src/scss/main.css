@@ -1075,6 +1075,7 @@ body .pagination .next:hover > div {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 101;
+  cursor: pointer;
 }
 
 .js-video__wrapper .js-close-video::after {
@@ -1083,9 +1084,7 @@ body .pagination .next:hover > div {
   width: 10px;
   background-image: url("../images/close.svg");
   background-size: 10px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 7px;
   right: 7px;
   position: absolute;
 }
