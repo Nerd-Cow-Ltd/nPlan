@@ -1,0 +1,47 @@
+.cc-window {
+    padding: 30px !important;
+    max-width: 480px !important;
+    font-family: "Avenir", sans-serif !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    border-radius: 4px !important;
+    @include max(540px) {
+        right: 0 !important;
+        margin: 0 30px !important;
+    }
+    .cc-message {
+        font-size: 18px !important;
+        line-height: 25px !important;
+        color: $secondary03 !important;
+        margin-bottom: 30px !important;
+    }
+    .cc-link {
+        font-size: 18px !important;
+        line-height: 25px !important;
+        color: $secondary03 !important;
+        opacity: 1 !important;
+        padding: 0 !important;
+    }
+    .cc-btn {
+        background-color: $additional03 !important;
+        border: $additional03 !important;
+        padding: 15px 30px !important;
+        color: $primary01 !important;
+        border-radius: 8px !important;
+        font-family: "Avenir", sans-serif !important;
+        text-decoration: none !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        line-height: 25px !important;
+        min-width: initial !important;
+        transition: .3s !important;
+        &:hover {
+            color: $secondary03 !important;
+            background-color: $additional01 !important;
+            border: 1px solid $additional01 !important;
+        }
+    }
+    .cc-compliance {
+        text-align: left !important;
+    }
+}
