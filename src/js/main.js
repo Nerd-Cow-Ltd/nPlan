@@ -94,16 +94,18 @@
             e.preventDefault();
             let $video = $('.js-video__wrapper');
             let windowWidth = document.body.clientWidth;
-            let $iFrame = $video.find('iframe');
-            let src = $iFrame.attr("src");
             if (windowWidth <= 560) {
                 $('body').animate({
                     'margin-top': 0
                 }, 400);
             };
             $video.removeClass('visible');
-            $iFrame.attr("src", "");
-            $iFrame.attr("src", src);
+            let $iFrame = $video.find('iframe');
+            let src = $iFrame.attr("src");
+            setTimeout(function() {
+                $iFrame.attr("src", "");
+                $iFrame.attr("src", src);
+            }, 500);
         });
 
         $('.accordion p:first-child').on('click', function() {
