@@ -1744,3 +1744,28 @@ body .w-container .w-row {
 body .w-container .margin-removal h1, body .w-container .margin-removal h2, body .w-container .margin-removal h3, body .w-container .margin-removal h4, body .w-container .margin-removal p, body .w-container .margin-removal span, body .w-container .margin-removal a {
   margin: 0;
 }
+
+.product-item {
+  position: relative;
+}
+
+.product-item::before {
+  content: "";
+  background-image: url("../images/product-addon.svg");
+  background-size: 15px 47px;
+  width: 15px;
+  height: 47px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.product-item::after {
+  content: "";
+  width: 1px;
+  height: calc(100% - 62px);
+  background-color: #172B38;
+  border-radius: 1px;
+  left: 7.5px;
+  top: 62px;
+}

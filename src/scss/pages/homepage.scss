@@ -1,0 +1,22 @@
+.product-item {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url('../images/product-addon.svg');
+        background-size: 15px 47px;
+        width: 15px;
+        height: 47px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &::after {
+        content: "";
+        width: 1px;
+        height: calc(100% - 62px);
+        background-color: $primary01;
+        border-radius: 1px;
+        left: 7.5px;
+        top: 62px;
+    }
+}
