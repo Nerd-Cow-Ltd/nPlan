@@ -97,6 +97,7 @@
         }
         &:visited {
             color: $additional01;
+            transition: .3s;
             &::after {
                 background-color: $additional01;
             }

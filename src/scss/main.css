@@ -405,6 +405,7 @@ body blockquote.green::before {
 
 .w-button.secondary:visited {
   color: #3686B4;
+  transition: .3s;
 }
 
 .w-button.secondary:visited::after {
@@ -1768,4 +1769,5 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   border-radius: 1px;
   left: 7.5px;
   top: 62px;
+  position: absolute;
 }
