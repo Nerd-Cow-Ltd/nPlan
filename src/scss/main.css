@@ -1771,3 +1771,21 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   top: 62px;
   position: absolute;
 }
+
+.product-separator {
+  position: relative;
+}
+
+.product-separator::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("../images/logo-small-white.svg");
+  background-size: 7px 8px;
+  width: 7px;
+  height: 8px;
+  background-color: transparent;
+}
