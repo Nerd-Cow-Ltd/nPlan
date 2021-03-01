@@ -939,6 +939,7 @@ body .w-checkbox:hover .w-checkbox-input + span::before {
   display: block;
   transition: .3s;
   cursor: pointer;
+  padding-right: 28px;
 }
 
 .accordion p:first-child::after {

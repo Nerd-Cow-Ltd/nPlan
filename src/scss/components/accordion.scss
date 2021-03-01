@@ -4,6 +4,7 @@
         display: block;
         transition: .3s;
         cursor: pointer;
+        padding-right: 28px;
         &::after {
             content: "";
             mask-image: url('../images/accordion.svg');
