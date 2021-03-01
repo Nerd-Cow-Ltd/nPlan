@@ -1,0 +1,22 @@
+.js-toggle-video {
+
+}
+
+.js-video {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+    transform: translateX(530px);
+    .js-close-video {
+
+    }
+    &.visible {
+
+    }
+}
