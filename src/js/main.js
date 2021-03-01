@@ -85,7 +85,7 @@
             if (windowWidth <= 560) {
                 $('body').animate({
                     'margin-top': $video.innerHeight()
-                }, 500);
+                }, 400);
             };
             $video.addClass('visible');
         });
@@ -94,15 +94,16 @@
             e.preventDefault();
             let $video = $('.js-video__wrapper');
             let windowWidth = document.body.clientWidth;
-            let src = $video.attr("src");
+            let $iFrame = $video.find('iframe');
+            let src = $iFrame.attr("src");
             if (windowWidth <= 560) {
                 $('body').animate({
                     'margin-top': 0
-                }, 500);
+                }, 400);
             };
             $video.removeClass('visible');
-            $video.attr("src", "");
-            $video.attr("src", src);
+            $iFrame.attr("src", "");
+            $iFrame.attr("src", src);
         });
 
         $('.accordion p:first-child').on('click', function() {
