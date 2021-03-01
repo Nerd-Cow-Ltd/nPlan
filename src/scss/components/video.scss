@@ -2,21 +2,40 @@
 
 }
 
-.js-video {
+.js-video__wrapper {
     position: fixed;
     bottom: 30px;
     right: 30px;
     width: 100%;
     max-width: 500px;
     height: auto;
-    z-index: 1000;
+    z-index: 100;
     border-radius: 4px;
     overflow: hidden;
     transform: translateX(530px);
+    transition: .5s;
     .js-close-video {
-
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 101;
+        &::after {
+            content: '';
+            height: 10px;
+            width: 10px;
+            background-image: url('../images/close.svg');
+            background-size: 10px 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 7px;
+            position: absolute;
+        }
     }
     &.visible {
-
+        transform: translateX(0);
     }
 }

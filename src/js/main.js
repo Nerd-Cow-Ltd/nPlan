@@ -78,6 +78,16 @@
             $(this).css('color', '#172B38');
         });
 
+        $('.js-toggle-video').on('click', function(e) {
+            e.preventDefault();
+            $('.js-video__wrapper').addClass('visible');
+        });
+
+        $('.js-close-video').on('click', function(e) {
+            e.preventDefault();
+            $('.js-video__wrapper').removeClass('visible');
+        });
+
         $('.accordion p:first-child').on('click', function() {
             let $accordion = $(this).parent();
             if ($accordion.hasClass('active')) {
