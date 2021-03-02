@@ -1642,6 +1642,7 @@ body .pagination .next:hover > div {
 }
 
 .footer.dark::after {
+  content: "";
   position: absolute;
   right: -120px;
   top: 20px;
