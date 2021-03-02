@@ -1799,3 +1799,20 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   height: 8px;
   background-color: transparent;
 }
+
+.homepage-hero {
+  margin-left: calc((100vw - 1200px) / 2);
+}
+
+@media screen and (max-width: 1260px) {
+  .homepage-hero {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homepage-hero {
+    padding-right: 30px;
+  }
+}
