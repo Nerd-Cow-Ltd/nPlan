@@ -1893,6 +1893,14 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
           transform: translateY(-50%);
 }
 
+@media screen and (max-width: 767px) {
+  .activities-table::before, .activities-table::after {
+    background-size: 359px 55px;
+    width: 359px;
+    height: 55px;
+  }
+}
+
 .activities-table::before {
   right: calc(100% - 18px);
 }

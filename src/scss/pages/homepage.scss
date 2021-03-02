@@ -85,6 +85,11 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        @include max(767px) {
+            background-size: 359px 55px;
+            width: 359px;
+            height: 55px;
+        }
     }
     &::before {
         right: calc(100% - 18px);
