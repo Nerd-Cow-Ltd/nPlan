@@ -1958,7 +1958,7 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   position: relative;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 414px) {
   .milestones-table {
     margin: 70px 0;
   }

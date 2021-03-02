@@ -140,7 +140,7 @@
 
 .milestones-table {
     position: relative;
-    @include min(380px) {
+    @include max(414px) {
         margin: 70px 0;
     }
     img {
