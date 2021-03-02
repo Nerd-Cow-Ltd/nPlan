@@ -1908,3 +1908,26 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
 .activities-table::after {
   left: calc(100% - 18px);
 }
+
+.app-menu {
+  position: relative;
+}
+
+.app-menu img {
+  z-index: 10;
+}
+
+@media screen and (max-width: 375px) {
+  .app-menu::after {
+    content: '';
+    background-image: url("../images/activities-addon.svg");
+    background-size: 375px 441px;
+    width: 375px;
+    height: 441px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}

@@ -98,3 +98,23 @@
         left: calc(100% - 18px);
     }
 }
+
+.app-menu {
+    position: relative;
+    img {
+        z-index: 10;
+    }
+    &::after {
+        @include max(375px) {
+            content: '';
+            background-image: url('../images/activities-addon.svg');
+            background-size: 375px 441px;
+            width: 375px;
+            height: 441px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
