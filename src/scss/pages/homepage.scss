@@ -141,7 +141,7 @@
 .milestones-table {
     position: relative;
     @include max(414px) {
-        margin: 40px 0 70px;
+        margin: 70px 0;
     }
     img {
         z-index: 10;
