@@ -29,6 +29,7 @@ body {
   -ms-text-size-adjust: 100%;
   position: relative;
   overflow-x: hidden;
+  position: relative;
 }
 
 body.locked {
@@ -1757,6 +1758,12 @@ body .pagination .next:hover > div {
 body .w-container .w-row {
   margin-left: 0;
   margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  body .w-container {
+    overflow: hidden;
+  }
 }
 
 .shadow {

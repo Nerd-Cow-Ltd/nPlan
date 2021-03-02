@@ -4,6 +4,9 @@ body {
             margin-left: 0;
             margin-right: 0;
         }
+        @include max(767px) {
+            overflow: hidden;
+        }
     }
 }
 
