@@ -126,6 +126,7 @@
         position: relative;
     }
     &::before {
+        content: '';
         position: absolute;
         background-image: url('../images/milestones-bg.svg');
         background-size: 662px 525px;
@@ -139,12 +140,16 @@
 
 .milestones-table {
     position: relative;
+    @include min(380px) {
+        margin: 70px 0;
+    }
     img {
         z-index: 10;
         position: relative;
     }
     &::before {
-        @include max(380px) {
+        @include max(414px) {
+            content: '';
             position: absolute;
             background-image: url('../images/milestones-bg.svg');
             background-size: 373px 296px;

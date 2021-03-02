@@ -1942,6 +1942,7 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
 }
 
 .milestones-table-desktop::before {
+  content: '';
   position: absolute;
   background-image: url("../images/milestones-bg.svg");
   background-size: 662px 525px;
@@ -1957,13 +1958,20 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   position: relative;
 }
 
+@media screen and (min-width: 380px) {
+  .milestones-table {
+    margin: 70px 0;
+  }
+}
+
 .milestones-table img {
   z-index: 10;
   position: relative;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 414px) {
   .milestones-table::before {
+    content: '';
     position: absolute;
     background-image: url("../images/milestones-bg.svg");
     background-size: 373px 296px;
