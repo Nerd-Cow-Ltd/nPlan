@@ -4,7 +4,7 @@
     &::after {
         content: "";
         position: absolute;
-        right: -120px;
+        right: -100px;
         top: 20px;
         background-image: url('../images/footer-background.svg');
         background-size: 268px 633px;
@@ -15,7 +15,6 @@
         padding-top: 30px;
         padding-bottom: 30px;
         &::after {
-            right: -100px;
             top: 385px;
         }
     }

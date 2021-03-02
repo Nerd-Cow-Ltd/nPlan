@@ -1644,7 +1644,7 @@ body .pagination .next:hover > div {
 .footer.dark::after {
   content: "";
   position: absolute;
-  right: -120px;
+  right: -100px;
   top: 20px;
   background-image: url("../images/footer-background.svg");
   background-size: 268px 633px;
@@ -1658,7 +1658,6 @@ body .pagination .next:hover > div {
     padding-bottom: 30px;
   }
   .footer.dark::after {
-    right: -100px;
     top: 385px;
   }
 }
