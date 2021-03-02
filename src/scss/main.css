@@ -284,6 +284,10 @@ body blockquote.green::before {
   margin-bottom: 0;
 }
 
+.separator.homepage-separator {
+  margin-bottom: 0;
+}
+
 .w-button {
   transition: .3s;
 }
