@@ -105,11 +105,11 @@
         z-index: 10;
     }
     &::after {
-        @include max(375px) {
+        @include max(414px) {
             content: '';
             background-image: url('../images/app-menu-bg.svg');
-            background-size: 375px 441px;
-            width: 375px;
+            background-size: 556px 441px;
+            width: 556px;
             height: 441px;
             position: absolute;
             top: 50%;
