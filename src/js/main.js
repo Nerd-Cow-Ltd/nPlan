@@ -78,6 +78,10 @@
             $(this).css('color', '#172B38');
         });
 
+        $('select').on('change', function() {
+            $(this).blur();
+        });
+
         $('.js-toggle-video').on('click', function(e) {
             e.preventDefault();
             let $video = $('.js-video__wrapper');
