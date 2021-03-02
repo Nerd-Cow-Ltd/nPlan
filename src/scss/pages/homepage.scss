@@ -118,3 +118,41 @@
         }
     }
 }
+
+.milestones-table-desktop {
+    position: relative;
+    img {
+        z-index: 10;
+        position: relative;
+    }
+    &::before {
+        position: absolute;
+        background-image: url('../images/milestones-bg.svg');
+        background-size: 662px 525px;
+        width: 662px;
+        height: 525px;
+        right: calc(100% - 232px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.milestones-table {
+    position: relative;
+    img {
+        z-index: 10;
+        position: relative;
+    }
+    &::before {
+        @include max(380px) {
+            position: absolute;
+            background-image: url('../images/milestones-bg.svg');
+            background-size: 373px 296px;
+            width: 373px;
+            height: 296px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
