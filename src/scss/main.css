@@ -1636,10 +1636,29 @@ body .pagination .next:hover > div {
   color: #F4F6F7;
 }
 
+.footer.dark {
+  overflow: hidden;
+  position: relative;
+}
+
+.footer.dark::after {
+  position: absolute;
+  right: -120px;
+  top: 20px;
+  background-image: url("../images/footer-background.svg");
+  background-size: 268px 633px;
+  width: 268px;
+  height: 633px;
+}
+
 @media screen and (max-width: 1024px) {
   .footer.dark {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .footer.dark::after {
+    right: -100px;
+    top: 385px;
   }
 }
 
