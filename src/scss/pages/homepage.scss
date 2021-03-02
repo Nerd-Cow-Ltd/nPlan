@@ -48,3 +48,16 @@
         padding-right: 30px;
     }
 }
+
+.top-bar {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "";
+        background-image: url('../images/topbar-background.svg');
+        background-size: 259px 59px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

@@ -1835,3 +1835,17 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
     padding-right: 30px;
   }
 }
+
+.top-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-bar::before {
+  content: "";
+  background-image: url("../images/topbar-background.svg");
+  background-size: 259px 59px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
