@@ -70,3 +70,23 @@
         }
     }
 }
+
+.activities-table {
+    position: relative;
+    &::before, &::after {
+        content: '';
+        background-image: url('../images/activities-addon.svg');
+        background-size: 718px 110px;
+        width: 718px;
+        height: 110px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &::before {
+        right: calc(100% - 20px);
+    }
+    &::after {
+        left: calc(100% - 20px);
+    }
+}

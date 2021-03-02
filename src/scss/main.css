@@ -1865,3 +1865,27 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
     height: 90px;
   }
 }
+
+.activities-table {
+  position: relative;
+}
+
+.activities-table::before, .activities-table::after {
+  content: '';
+  background-image: url("../images/activities-addon.svg");
+  background-size: 718px 110px;
+  width: 718px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.activities-table::before {
+  right: calc(100% - 20px);
+}
+
+.activities-table::after {
+  left: calc(100% - 20px);
+}
