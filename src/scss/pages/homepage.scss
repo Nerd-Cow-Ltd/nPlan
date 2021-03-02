@@ -59,5 +59,14 @@
         position: absolute;
         left: 0;
         top: 0;
+        width: 259px;
+        height: 59px;
+        @include max(479px) {
+            background-size: 395px 90px;
+            left: -200px;
+            top: 0px;
+            width: 395px;
+            height: 90px;
+        }
     }
 }
