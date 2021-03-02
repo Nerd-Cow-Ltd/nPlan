@@ -39,7 +39,7 @@
 }
 
 .homepage-hero {
-    margin-left: calc((100vw - 1200px) / 2);
+    margin-left: calc((100% - 1200px) / 2);
     @include max(1260px) {
         margin-left: 0;
         padding-left: 30px;

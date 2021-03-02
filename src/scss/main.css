@@ -1801,7 +1801,7 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
 }
 
 .homepage-hero {
-  margin-left: calc((100vw - 1200px) / 2);
+  margin-left: calc((100% - 1200px) / 2);
 }
 
 @media screen and (max-width: 1260px) {
