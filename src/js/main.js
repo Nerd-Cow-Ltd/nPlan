@@ -133,6 +133,8 @@
             fade: true,
             cssEase: 'linear',
             adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
         });
         $('.slider--opinions').slick({
             infinite: true,
