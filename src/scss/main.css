@@ -1920,7 +1920,7 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
 @media screen and (max-width: 375px) {
   .app-menu::after {
     content: '';
-    background-image: url("../images/activities-addon.svg");
+    background-image: url("../images/app-menu-bg.svg");
     background-size: 375px 441px;
     width: 375px;
     height: 441px;
