@@ -134,7 +134,7 @@
             cssEase: 'linear',
             adaptiveHeight: true,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
         });
         $('.slider--opinions').slick({
             infinite: true,
