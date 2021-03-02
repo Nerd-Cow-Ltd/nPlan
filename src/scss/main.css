@@ -1870,6 +1870,10 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
   position: relative;
 }
 
+.activities-table img {
+  z-index: 10;
+}
+
 .activities-table::before, .activities-table::after {
   content: '';
   background-image: url("../images/activities-addon.svg");
@@ -1883,9 +1887,9 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
 }
 
 .activities-table::before {
-  right: calc(100% - 20px);
+  right: calc(100% - 18px);
 }
 
 .activities-table::after {
-  left: calc(100% - 20px);
+  left: calc(100% - 18px);
 }

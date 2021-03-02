@@ -73,6 +73,9 @@
 
 .activities-table {
     position: relative;
+    img {
+        z-index: 10;
+    }
     &::before, &::after {
         content: '';
         background-image: url('../images/activities-addon.svg');
@@ -84,9 +87,9 @@
         transform: translateY(-50%);
     }
     &::before {
-        right: calc(100% - 20px);
+        right: calc(100% - 18px);
     }
     &::after {
-        left: calc(100% - 20px);
+        left: calc(100% - 18px);
     }
 }
