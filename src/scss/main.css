@@ -1199,7 +1199,7 @@ body .js-tabs .job-category-tab {
   flex: 1 1 0px;
   padding: 12px 0;
   background-color: transparent;
-  border-bottom: 1px solid #9CAEBC;
+  border-bottom: 1px solid #F4F6F7;
   color: #9CAEBC;
   font-size: 18px;
   line-height: 23px;
@@ -1207,10 +1207,19 @@ body .js-tabs .job-category-tab {
   cursor: pointer;
 }
 
+body .js-tabs .job-category-tab:hover {
+  border-bottom: 1px solid #9CAEBC;
+}
+
 body .js-tabs .job-category-tab.active {
   font-weight: 700;
   border-bottom: 1px solid #172B38;
   color: #172B38;
+}
+
+body .js-select select {
+  margin: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 840px) {

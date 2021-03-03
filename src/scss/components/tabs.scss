@@ -5,17 +5,26 @@ body {
             flex: 1 1 0px;
             padding: 12px 0;
             background-color: transparent;
-            border-bottom: 1px solid $secondary01;
+            border-bottom: 1px solid $secondary03;
             color: $secondary01;
             font-size: 18px;
             line-height: 23px;
             transition: .3s;
             cursor: pointer;
+            &:hover {
+                border-bottom: 1px solid $secondary01;
+            }
             &.active {
                 font-weight: 700;
                 border-bottom: 1px solid $primary01;
                 color: $primary01;
             }
+        }
+    }
+    .js-select {
+        select {
+            margin: 0;
+            width: 100%;
         }
     }
 }
