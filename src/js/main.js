@@ -121,6 +121,18 @@
             };
         });
 
+        $('a.js-scroll').on('click', function (e) {
+            e.preventDefault()
+          
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top,
+                },
+                1000,
+                'swing'
+            )
+        });
+
         $('.js-calculator').calculator();
         $('.js-job-categories').jobCategories();
     });
