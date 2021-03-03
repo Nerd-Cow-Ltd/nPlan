@@ -1217,7 +1217,7 @@ body .js-tabs .job-category-tab.active {
   color: #172B38;
 }
 
-body .js-select select {
+body .js-select .select__wrapper select.select {
   margin: 0;
   width: 100%;
 }
