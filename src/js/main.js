@@ -122,6 +122,7 @@
         });
 
         $('.js-calculator').calculator();
+        $('.js-job-categories').jobCategories();
     });
 
     $(window).on('load', function() {
@@ -148,6 +149,57 @@
             adaptiveHeight: true,
         });
     });
+
+    $.fn.jobCategories = function() {
+        let $el;
+
+        let $items;
+
+        let $jobNav;
+        let $tabs;
+        let $select;
+
+        let jobList = [];
+    
+        let init = function() {
+            $items = $el.find('.w-dyn-item');
+
+            $jobNav = $el.prev('.js-jobs-navigation');
+            $tabs = $jobNav.children('.js-tabs');
+            $select = $jobNav.children('.js-select');
+
+            $el.find('.js-job-category').each(function() {
+                $(this).closest('.w-dyn-item').attr('data-category', $(this).text());
+                if ($(this).text() !== '' || !jobList.includes($(this).text())) {
+                    $tabs.append(`<button class="job-category-tab" data-category="${$(this).text()}">${$(this).text()}</button>`);
+                    jobList.push($(this).text());
+                };
+            });
+
+            let $tabsItems = $jobNav.find('.job-category-tab');
+
+            $tabsItems.on('click', function(e) {
+                e.preventDefault();
+                $tabsItems.removeClass('active');
+                $items.hide();
+                $el.find(`.w-dyn-item[data-category="${$(this).data('category')}"]`).show();
+                $(this).addClass('active');
+            });
+
+            $tabsItems.eq(0).trigger('click');
+        };
+        
+        if (this.length > 0) {
+            if (this.length > 1) {
+                this.each(function () {
+                    $(this).jobCategories();
+                })
+            } else {
+                $el = this;
+                init();
+            }
+        };
+    };
 
     $.fn.calculator = function () {
         let $el;

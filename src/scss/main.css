@@ -1191,6 +1191,28 @@ body .pagination .next:hover > div {
   text-align: left !important;
 }
 
+body .js-tabs {
+  display: flex;
+}
+
+body .js-tabs .job-category-tab {
+  flex: 1 1 0px;
+  padding: 12px 0;
+  background-color: transparent;
+  border-bottom: 1px solid #9CAEBC;
+  color: #9CAEBC;
+  font-size: 18px;
+  line-height: 23px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+body .js-tabs .job-category-tab.active {
+  font-weight: 700;
+  border-bottom: 1px solid #172B38;
+  color: #172B38;
+}
+
 @media screen and (max-width: 840px) {
   .desktop-navigation {
     justify-content: center !important;
