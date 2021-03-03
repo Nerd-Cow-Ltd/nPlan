@@ -135,6 +135,8 @@
             adaptiveHeight: true,
             autoplay: true,
             autoplaySpeed: 5000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
         });
         $('.slider--opinions').slick({
             infinite: true,
