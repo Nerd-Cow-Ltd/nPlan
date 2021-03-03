@@ -1704,7 +1704,7 @@ body .pagination .next:hover > div {
 
 .footer.dark .footer__second > div > a {
   color: #F4F6F7 !important;
-  line-height: 18px !important;
+  line-height: 25px !important;
 }
 
 .footer.dark .footer__second > div > a.current-active {
