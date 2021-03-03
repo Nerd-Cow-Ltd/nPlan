@@ -1,6 +1,8 @@
 body {
     .js-tabs {
-        display: flex;
+        @include min(768px) {
+            display: flex;
+        }
         .job-category-tab {
             flex: 1 1 0px;
             padding: 12px 0;

@@ -1191,8 +1191,10 @@ body .pagination .next:hover > div {
   text-align: left !important;
 }
 
-body .js-tabs {
-  display: flex;
+@media screen and (min-width: 768px) {
+  body .js-tabs {
+    display: flex;
+  }
 }
 
 body .js-tabs .job-category-tab {
