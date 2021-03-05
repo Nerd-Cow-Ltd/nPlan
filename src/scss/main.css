@@ -1252,12 +1252,10 @@ body .js-select .select__wrapper select.select {
 }
 
 .desktop-navigation .collection-list .collection-item:nth-child(2) {
-  padding-left: 60px;
   position: relative;
 }
 
 .desktop-navigation .collection-list .collection-item:nth-child(2)::before {
-  content: '';
   height: 4px;
   width: 4px;
   background-color: #9CAEBC;
@@ -1267,7 +1265,7 @@ body .js-select .select__wrapper select.select {
 }
 
 .desktop-navigation .collection-list .collection-item:nth-child(2) .submenu {
-  left: 30px;
+  left: -30px;
 }
 
 .desktop-navigation .collection-list .collection-item:last-child > a {
