@@ -309,6 +309,7 @@
 
             $next = $form.find('.primary-next');
             $back = $form.find('.back-button');
+            $change = $form.find('.js-change');
             $startAgain = $form.find('.js-again');
 
             $result = $estimate.find('h2 span');
@@ -344,6 +345,16 @@
                 };
                 $current.hide();
                 $itemBefore.show();
+            });
+
+            $change.on('click', function(e) {
+                if (!$(this).hasClass('.js-start')) {
+                    e.preventDefault();
+                    $current = $(this).closest('.calculator-item');
+                    let $itemBefore = $current.prev();
+                    $current.hide();
+                    $itemBefore.show();
+                };
             });
 
             $startAgain.on('click', function(e) {
