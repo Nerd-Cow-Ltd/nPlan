@@ -217,6 +217,12 @@ body ul.ordered-list--dark li::before {
   top: 0px;
 }
 
+@media screen and (max-width: 479px) {
+  body .remove-line-break--mobile br {
+    display: none;
+  }
+}
+
 body blockquote {
   border-left: 1px solid #172B38;
   margin: 0 0 30px 0;

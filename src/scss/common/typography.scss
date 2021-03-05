@@ -76,4 +76,12 @@ body {
             }
         }
     }
+
+    .remove-line-break--mobile {
+        @include max(479px) {
+            br {
+                display: none;
+            }
+        }
+    }
 }
