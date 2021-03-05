@@ -161,6 +161,82 @@
         });
     });
 
+    $.fn.jobCategories = function() {
+        let $el;
+
+        let $items;
+
+        let $jobNav;
+        let $tabs;
+        let $select;
+      
+      	let jobList = [];
+      
+      	let $selectItem;
+    
+        let init = function() {
+            $items = $el.find('.w-dyn-item');
+
+            $jobNav = $el.prev('.js-jobs-navigation');
+            $tabs = $jobNav.children('.js-tabs');
+            $select = $jobNav.find('.select__wrapper');
+          
+          	$selectItem = $('<select class="input select"></select>');
+
+            $el.find('.js-job-category').each(function() {
+              	$(this).closest('.w-dyn-item').attr('data-category', $(this).text());
+                if ($(this).text() !== '' && !jobList.includes($(this).text())) {
+                    $tabs.append(`<button class="job-category-tab" data-category="${$(this).text()}">${$(this).text()}</button>`);
+                  	$selectItem.append(`<option value="${$(this).text()}">${$(this).text()}</option>`);
+                    jobList.push($(this).text());
+                };
+            });
+          
+          	$select.append($selectItem);
+
+            let $tabsItems = $tabs.find('.job-category-tab');
+          	let $mobileSelect = $select.find('select');
+
+            $tabsItems.on('click', function(e) {
+                e.preventDefault();
+                $tabsItems.removeClass('active');
+                $items.hide();
+                $el.find(`.w-dyn-item[data-category="${$(this).data('category')}"]`).show();
+                $(this).addClass('active');
+            });
+          
+          	$mobileSelect.on('change', function(e) {
+            	e.preventDefault();
+                $tabs.find(`.job-category-tab[data-category="${$(this).val()}"]`).trigger('click');
+            });
+
+            $tabsItems.eq(0).trigger('click');
+
+            $mobileSelect.on('focus', function() {
+                $(this).css('color', '#172B38');
+            });
+            
+            $mobileSelect.on('change', function() {
+                $(this).css('color', '#172B38');
+            });
+    
+            $mobileSelect.on('change', function() {
+                $(this).blur();
+            });
+        };
+        
+        if (this.length > 0) {
+            if (this.length > 1) {
+                this.each(function () {
+                    $(this).jobCategories();
+                })
+            } else {
+                $el = this;
+                init();
+            }
+        };
+    };
+
     $.fn.calculator = function () {
         let $el;
 
