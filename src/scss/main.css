@@ -162,7 +162,7 @@ body ul li::before {
   width: 10px;
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 4px;
 }
 
 body ul.ordered-list {
@@ -2024,4 +2024,31 @@ body .w-container .margin-removal h1, body .w-container .margin-removal h2, body
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+}
+
+body .branding01 {
+  position: relative;
+}
+
+body .branding01::after {
+  content: '';
+  background-image: url("../images/addon01.svg");
+}
+
+body .branding02 {
+  position: relative;
+}
+
+body .branding02::after {
+  content: '';
+  background-image: url("../images/addon02.svg");
+}
+
+body .branding03 {
+  position: relative;
+}
+
+body .branding03::after {
+  content: '';
+  background-image: url("../images/addon03.svg");
 }

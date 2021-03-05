@@ -161,3 +161,27 @@
         }
     }
 }
+
+body {
+    .branding01 {
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url('../images/addon01.svg');
+        }
+    }
+    .branding02 {
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url('../images/addon02.svg');
+        }
+    }
+    .branding03 {
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url('../images/addon03.svg');
+        }
+    }
+}
