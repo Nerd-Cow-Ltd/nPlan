@@ -151,18 +151,18 @@ body ul {
 
 body ul li {
   position: relative;
-  padding-left: 31px;
+  padding-left: 25px;
 }
 
 body ul li::before {
   content: "";
+  background-image: url("../images/list-arrow.svg");
+  background-size: 10px 16px;
   height: 16px;
-  width: 16px;
-  border: 3px solid #9CAEBC;
+  width: 10px;
   position: absolute;
   left: 0;
-  border-radius: 100%;
-  top: 4px;
+  top: 3px;
 }
 
 body ul.ordered-list {
@@ -177,6 +177,8 @@ body ul.ordered-list li {
 
 body ul.ordered-list li::before {
   content: counter(list-counter);
+  background-image: initial;
+  background-size: initial;
   color: #9CAEBC;
   font-family: "garamond-premier-pro", Fallback, sans-serif;
   font-size: 20px;
@@ -203,6 +205,8 @@ body ul.ordered-list--dark li::before {
   content: counter(list-counter);
   color: #172B38;
   font-family: "Avenir", Fallback, sans-serif;
+  background-image: initial;
+  background-size: initial;
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;

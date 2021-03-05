@@ -15,16 +15,16 @@ body {
         padding: 0;
         li {
             position: relative;
-            padding-left: 31px;
+            padding-left: 25px;
             &::before {
                 content: "";
+                background-image: url('../images/list-arrow.svg');
+                background-size: 10px 16px;
                 height: 16px;
-                width: 16px;
-                border: 3px solid $secondary01;
+                width: 10px;
                 position: absolute;
                 left: 0;
-                border-radius: 100%;
-                top: 4px;
+                top: 3px;
             }
         }
     }
@@ -37,6 +37,8 @@ body {
             padding-left: 26px;
             &::before {
                 content: counter(list-counter);
+                background-image: initial;
+                background-size: initial;
                 color: $secondary01;
                 font-family: $primaryFont;
                 font-size: 20px;
@@ -61,6 +63,8 @@ body {
                 content: counter(list-counter);
                 color: $primary01;
                 font-family: $secondaryFont;
+                background-image: initial;
+                background-size: initial;
                 font-size: 18px;
                 line-height: 25px;
                 font-weight: 700;
